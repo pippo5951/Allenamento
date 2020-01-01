@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txt_dati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorInfo"
+        android:textStyle="italic" />
+    </ScrollView>
+    </LinearLayout>
+
+    <!-- android:layout_height="250dp" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chronometerInAndroid"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/colorBottoni"
+        android:textStyle="bold" />
+
+        <Chronometer
+            android:id="@+id/simpleChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="@drawable/bottone"
+        android:textColor="@color/colorBottoni"
+        android:text="@string/start"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bottone"
+        android:textColor="@color/colorBottoni"
+        android:text="@string/stop"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="11"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/restart"
+        android:background="@drawable/sub_bottone"
+        android:textColor="@color/colorBottoni"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/setFormat"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:text="@string/setFormat"
+        android:background="@drawable/sub_bottone"
+        android:textColor="@color/colorBottoni"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/clearFormat"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/sub_bottone"
+        android:textColor="@color/colorBottoni"
+        android:textSize="13dp"
+        android:text="@string/clearFormat"
+        android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/save_dati"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/sub_bottone"
+            android:textColor="@color/colorBottoni"
+            android:text="@string/saveDati"
+            android:layout_weight="1"/>
+
+    </LinearLayout>L
+
+
+</LinearLayout>

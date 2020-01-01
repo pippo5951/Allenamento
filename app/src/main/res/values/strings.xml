@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Allenamenti settimanali</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="chronometerInAndroid">Inizia il tuo allenamento</string>
+    <string name="start">Start</string>
+    <string name="stop">Pausa</string>
+    <string name="restart">Reset</string>
+    <string name="setFormat">Set FRM</string>
+    <string name="clearFormat">FRM</string>
+    <string name="saveDati">Salva</string>
+</resources>
